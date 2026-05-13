@@ -2,13 +2,14 @@
 
 Практический Python CLI demo repo для выступления о переносимых AI-agent workflows.
 
-Главная мысль демо: Codex — это runtime, а переносимый актив команды — это процесс вокруг него: `AGENTS.md`, task taxonomy, проверки, локальная knowledge base, MCP tool boundary и повторяемые task instructions.
+Главная мысль демо: agent runtime заменяем, а переносимый актив команды — это процесс вокруг него: `AGENTS.md`, skills/task instructions, task taxonomy, hooks/checks, долговременная knowledge base, MCP tool boundary, subagent policy и context-reduction tooling.
 
 ## Что показывает repo
 
 1. Debug workflow: агент получает падающий тест CLI, воспроизводит проблему, исправляет минимально и запускает проверку.
 2. Vault / LLM Wiki workflow: агент улучшает ingest/lint локального Markdown vault и фиксирует знания как структуру, а не как ephemeral chat.
 3. Scheduled-agent mindset: фоновые задачи описываются как markdown-инструкции, без machine-specific scheduler configs в git.
+4. Lecture 2 flow: `docs/lecture-2-flow.ru.md` связывает принципы, skills, taxonomy, hooks, memory, reasoning guard, subagents, MCP и RTK в один рассказ.
 
 ## Быстрый старт
 
@@ -68,6 +69,10 @@ Fixture `tests/fixtures/vault` намеренно содержит lint issues: 
 Локальные заметки для выступления лежат в `.talk-private/*.md`. Они находятся внутри repo для удобства live demo, но исключены из git через `.gitignore`.
 
 Правило: не хранить там секреты. Команды, тезисы и заметки — можно; токены, пароли и приватные connection strings — нельзя.
+
+## Карта лекции
+
+См. `docs/lecture-2-flow.ru.md`: там перечислено, какие шаги лекции демонстрируются файлами repo, а какие намеренно остаются outside-git local configuration.
 
 ## Проверка
 

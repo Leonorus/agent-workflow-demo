@@ -1,6 +1,6 @@
 # Agent instructions
 
-Этот demo repo рассчитан на Codex-first workflow. Публичные docs пишутся на русском. Не добавляй vendor-specific конфиги других agent runtimes без прямой просьбы пользователя.
+Этот demo repo рассчитан на Codex-first workflow, но сам рассказ подчёркивает переносимость процесса между compatible AI coding agents. Публичные docs пишутся на русском. Не добавляй vendor-specific конфиги других agent runtimes без прямой просьбы пользователя.
 
 ## First move
 
